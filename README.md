@@ -1,10 +1,13 @@
 Clean watch api
+
 # Statut
+
 ⚠️ L'API est actuellement en cours de construction. Pour l'instant, elle propose uniquement des films.
 
 L'api a été conçue pour répertorier des films et des séries sans contenu explicite, permettant ainsi une expérience de visionnage adaptée à tous.
 
 ## Tag `explicit_flag`
+
 Le tag `explicit_flag` indique le type de contenu dans les films et séries :
 
 `None` : Pas de contenu explicite.
@@ -16,9 +19,11 @@ Le tag `explicit_flag` indique le type de contenu dans les films et séries :
 **Récupérer les détails d'un film spécifique**
 
 **Requête :**
+
 ```http request
 GET {{base_url}}/api/v1/film/1
 ```
+
 **Réponse :**
 
 ```json
@@ -59,7 +64,7 @@ GET {{base_url}}/api/v1/film/1
     {
       "id": "1",
       "name": "FilmBox+",
-      "link": "https://filmbox...",
+      "link": "https://filmbox..."
     },
     {
       "id": "2",
@@ -68,22 +73,32 @@ GET {{base_url}}/api/v1/film/1
   ]
 }
 ```
+
 **Lister tous les films**
 
 **Requête :**
+
 ```http request
 GET {{base_url}}/api/v1/films
 ```
+
 **Réponse :**
 
 ```js
-[
+;[
   {
-    "id": "1",
-    "title": "Hugo Cabret",
-    "explicit_flag": "None",
-    "poster": "https://res.cloudinary..."
+    id: '1',
+    title: 'Hugo Cabret',
+    explicit_flag: 'None',
+    poster: 'https://res.cloudinary...',
   },
   // {...}
 ]
 ```
+
+### Stack
+
+- Python
+- Flask
+- CockroachDB
+- Cloudinary
