@@ -1,5 +1,8 @@
 __pycache__
 
-.env
+.flaskenv
 
 .venv
+
+root.crt
+
