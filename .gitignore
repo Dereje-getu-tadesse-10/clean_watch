@@ -1,8 +1,12 @@
+## cache
 __pycache__
 
+## env file
 .flaskenv
 
+## virtualenv
 .venv
 
+## server certificat
 root.crt
 
